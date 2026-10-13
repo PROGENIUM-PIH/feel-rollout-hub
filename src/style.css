@@ -7,3 +7,5 @@
 .map-zoom-controls button:focus-visible{outline:2px solid #0e3a2f;outline-offset:-3px}
 
 .market-info-sections{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0}.market-info-card{border:1px solid #dfe8e1;background:#f8faf8;border-radius:8px;padding:20px}.market-info-card h2{margin:10px 0 8px;font-size:18px}.market-info-card .muted{font-size:12px;line-height:1.6;margin:0 0 17px}.market-info-card .field input,.market-info-card .field select{width:100%}@media(max-width:1100px){.market-info-sections{grid-template-columns:1fr}}
+
+.auth-page{min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f2f5f3;padding:24px}.auth-card{background:white;border:1px solid #dce5df;border-radius:12px;padding:32px;width:min(440px,100%);box-shadow:0 12px 36px #102f2410}.auth-card .brand{background:#0e3a2f;color:white;padding:18px;border-radius:8px;margin-bottom:24px}.auth-card h1{font-size:26px}.auth-card .field{margin:16px 0}.auth-card input{width:100%}.auth-card button{margin-top:10px}#sync-status{font-size:11px;margin:0 12px;opacity:.75}
