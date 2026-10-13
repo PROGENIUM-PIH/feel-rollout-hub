@@ -5,3 +5,5 @@
 .map-zoom-controls button+button{border-top:1px solid #e6ece7}
 .map-zoom-controls button:hover{background:#e8fff0}
 .map-zoom-controls button:focus-visible{outline:2px solid #0e3a2f;outline-offset:-3px}
+
+.market-info-sections{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0}.market-info-card{border:1px solid #dfe8e1;background:#f8faf8;border-radius:8px;padding:20px}.market-info-card h2{margin:10px 0 8px;font-size:18px}.market-info-card .muted{font-size:12px;line-height:1.6;margin:0 0 17px}.market-info-card .field input,.market-info-card .field select{width:100%}@media(max-width:1100px){.market-info-sections{grid-template-columns:1fr}}
