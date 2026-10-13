@@ -4,6 +4,7 @@ import {feature} from 'topojson-client';
 import {geoNaturalEarth1,geoPath} from 'd3-geo';
 import {select} from 'd3-selection';
 import {zoom,zoomIdentity} from 'd3-zoom';
+import 'd3-transition';
 const MARKETS=[['Spain',724],['France',250],['United Kingdom',826],['India',356],['Czech Republic',203],['Germany',276],['Austria',40],['Finland',246],['Poland',616]];
 const MODULES=['Salesmen desk','Car information stand','Accessories Zone','Heritage Zone','VR Area','Charging Studio','Car Configurator Area','Kids Zone','Smart Mirror','PC Mode'];
 const READINESS=['Not Assessed','In Development','Ready','On Hold'];
