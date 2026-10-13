@@ -34,3 +34,6 @@
 
 /* Module catalog: understated clickable labels, no underline or arrows */
 .module-catalog .module-catalog-link{text-decoration:none!important;transition:color .18s ease,background-color .18s ease,box-shadow .18s ease;border-radius:5px;padding:7px 10px;margin:-7px -10px;cursor:pointer}.module-catalog .module-catalog-link:hover{color:#075e39;background-color:#dff9e8;box-shadow:inset 3px 0 0 #0e754b;text-decoration:none!important}.module-catalog .module-catalog-link:focus-visible{outline:2px solid #0e754b;outline-offset:3px;text-decoration:none!important}
+
+/* Dashboard localization table: increase all table text by 2px */
+.localization-table{font-size:calc(1em + 2px)}.localization-table th,.localization-table td,.localization-table .localization-tag,.localization-table .dashboard-open-market{font-size:inherit}
