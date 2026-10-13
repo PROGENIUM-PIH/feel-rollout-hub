@@ -37,7 +37,7 @@ function authScreen(){app.innerHTML='<main class="auth-page"><div class="auth-ca
 async function initAuth(){if(accessCode)await loadShared();else authScreen()}
 const data=m=>state.markets[m] ||= {modules:{},lifecycle:'Draft',health:'On Track',rolloutDate:'',locationCount:'',comment:''};
 const mod=(m,n)=>data(m).modules[n] ||= {interest:'No indication',support:'Not started',readiness:'Not Assessed',deployment:'Not Started',completedAt:''};
-const concept=n=>state.concept[n]||'Not defined';
+const concept=n=>!state.concept[n]||state.concept[n]==='Not defined'?'Optional':state.concept[n];
 const engaged=m=>MODULES.filter(n=>{const d=mod(m,n);return d.support==='In rollout'||d.support==='Completed'||d.deployment!=='Not Started'});
 const assigned=m=>engaged(m);
 const completion=m=>{let a=engaged(m);return a.length?Math.round(a.filter(n=>mod(m,n).deployment==='Completed'&&mod(m,n).completedAt).length/a.length*100):null};
