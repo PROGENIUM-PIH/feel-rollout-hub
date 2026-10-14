@@ -37,3 +37,82 @@
 
 /* Dashboard localization table: increase all table text by 2px */
 .localization-table{font-size:calc(1em + 2px)}.localization-table th,.localization-table td,.localization-table .localization-tag,.localization-table .dashboard-open-market{font-size:inherit}
+
+/* ŠKODA global visual system */
+:root{--emerald:#0e3a2f;--electric:#78faae;--land:#e7ece8;--map-bg:#fbfcfb;--page-bg:#f6f8f6;--on-dark-muted:#9fd8b8;font-family:"SKODA Next",Arial,sans-serif;font-weight:300;background:var(--page-bg);color:var(--emerald)}
+body{background:var(--page-bg);font-family:"SKODA Next",Arial,sans-serif;font-weight:300}
+h1,h2,h3,h4,h5,h6,.panel-head strong,.market-name,.world-selected-name,.kpi b,.metric strong,.btn,button,nav button,.brand,.module-catalog-link,.world-market-mini strong,.world-metric strong{font-family:"SKODA Next",Arial,sans-serif;font-weight:900}
+p,small,label,td,th,input,select,textarea,.muted,.eyebrow,.map-tip,.world-muted{font-family:"SKODA Next",Arial,sans-serif;font-weight:300}
+button,input,select,textarea{font-family:"SKODA Next",Arial,sans-serif}
+.btn.mint,.world-page .btn.mint{background:var(--electric);border-color:var(--electric);color:var(--emerald);font-weight:900}
+.btn.mint:hover,.world-page .btn.mint:hover{background:#a0ffc6;border-color:#a0ffc6}
+:focus-visible{outline:2px solid var(--electric);outline-offset:3px}
+.panel{border-color:#e6ece7}
+.world-page .intro{margin-bottom:22px}
+.world-bento{display:grid;grid-template-columns:minmax(0,1fr) 330px;grid-template-areas:"map right" "markets markets";gap:18px;align-items:start}
+.world-map-card{grid-area:map;min-width:0;background:#fff;border:1px solid #e6ece7;border-radius:22px;overflow:hidden}
+.world-map-head{padding:22px 23px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.world-map-head h2{margin:0;font-size:20px;color:var(--emerald)}
+.world-map-head p{margin:5px 0 0;color:#698476;font-size:13px}
+.world-map-tools{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.world-map-tools input{width:130px;min-width:90px;font-size:12px}
+.world-map-tools .btn{padding:9px 10px;white-space:nowrap;font-size:12px}
+.world-map-tools .map-tool-zoom{width:34px;height:36px;padding:0;font-size:20px}
+.world-page .map-canvas{height:auto;min-height:0;aspect-ratio:1000/470;background:var(--map-bg);overflow:hidden;position:relative}
+.world-page .map-canvas svg{width:100%;height:100%;display:block}
+.world-page .country{fill:var(--land);stroke:#fff;stroke-width:.8;vector-effect:non-scaling-stroke}
+.world-page .country.market{fill:var(--electric);stroke:#fff;stroke-width:.85}
+.world-page .country.market:hover{fill:#a0ffc6;stroke:var(--emerald)}
+.world-page .country.focus,.world-page .country.focus:hover{fill:var(--emerald);stroke:var(--electric);stroke-width:2;vector-effect:non-scaling-stroke}
+.world-marker{cursor:pointer}
+.world-marker-circle{fill:var(--electric);stroke:var(--emerald);stroke-width:1.2;vector-effect:non-scaling-stroke}
+.world-marker-text{fill:var(--emerald);font-family:"SKODA Next",Arial,sans-serif;font-weight:900;font-size:11px;pointer-events:none}
+.world-marker.focus .world-marker-circle{fill:var(--emerald);stroke:var(--electric);stroke-width:2}
+.world-marker.focus .world-marker-text{fill:var(--electric)}
+.world-marker:focus-visible{outline:none}
+.world-marker:focus-visible .world-marker-circle{stroke:var(--electric);stroke-width:3;filter:drop-shadow(0 0 4px var(--emerald))}
+.world-page .map-tip{z-index:10;min-width:185px;background:#fff;color:var(--emerald);border-radius:10px;box-shadow:0 8px 24px rgba(14,58,47,.12);padding:13px 15px;font-size:12px}
+.world-page .map-tip strong{display:block;font-weight:900;font-size:14px;margin-bottom:7px}
+.world-page .map-tip div:not(.map-tip-track){display:flex;justify-content:space-between;gap:12px;margin-top:5px}
+.world-page .map-tip .map-tip-track{height:4px;background:#e7ece8;border-radius:10px;margin-top:10px;overflow:hidden}
+.world-page .map-tip .map-tip-track i{display:block;height:100%;background:var(--electric)}
+.world-map-legend{display:flex;gap:19px;align-items:center;flex-wrap:wrap;padding:16px 23px 19px;color:#627d6e;font-size:12px}
+.world-map-legend span{display:flex;gap:7px;align-items:center}
+.world-map-legend i{display:inline-block;width:13px;height:13px;border-radius:3px}
+.legend-live{background:var(--electric)}
+.legend-selected{background:var(--emerald);border:2px solid var(--electric)}
+.world-right{grid-area:right;display:grid;gap:18px;min-width:0}
+.world-dark-card{background:var(--emerald);color:#fff;border-radius:22px;padding:24px;min-width:0}
+.world-dark-card h2,.world-dark-card h3{color:#fff;margin:0}
+.world-dark-card p,.world-muted{color:var(--on-dark-muted)}
+.world-card-eyebrow{color:var(--on-dark-muted);letter-spacing:.15em;font-size:10px;text-transform:uppercase}
+.world-selected-name{font-size:30px;line-height:1.1;letter-spacing:-.03em;margin:8px 0 21px}
+.world-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-bottom:21px}
+.world-metric{background:rgba(255,255,255,.08);border-radius:10px;padding:13px 12px;min-width:0}
+.world-metric small{display:block;color:var(--on-dark-muted);font-size:11px;margin-bottom:7px}
+.world-metric strong{display:block;font-size:17px;overflow-wrap:anywhere}
+.world-selected h3{font-size:14px;margin-bottom:10px}
+.world-active-list{list-style:none;margin:0 0 17px;padding:0;display:grid;gap:7px}
+.world-active-list li{background:rgba(255,255,255,.08);border-radius:7px;padding:9px 11px;font-size:12px}
+.world-open{width:100%;margin-top:13px}
+.world-average{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.world-average h2{font-size:17px;margin-bottom:7px}
+.world-average p{font-size:12px;line-height:1.5;margin:0}
+.feel-ring{--progress:0;flex-shrink:0;width:104px;height:104px;border-radius:50%;background:conic-gradient(var(--electric) calc(var(--progress)*1%),rgba(255,255,255,.15) 0);display:grid;place-items:center;position:relative}
+.feel-ring:before{content:"";position:absolute;inset:11px;border-radius:50%;background:var(--emerald)}
+.feel-ring span{position:relative;font-weight:900;font-size:20px;color:#fff}
+.feel-ring-small{width:45px;height:45px;margin-bottom:10px}
+.feel-ring-small:before{inset:5px;background:#255346}
+.feel-ring-small span{font-size:10px}
+.world-all-markets{grid-area:markets}
+.world-all-markets h2{font-size:18px;margin:0 0 17px}
+.world-market-grid{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:9px}
+.world-market-mini{min-width:0;display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:12px 9px;border:1.5px solid transparent;border-radius:11px;background:rgba(255,255,255,.08);color:#fff;cursor:pointer;transition:background .18s,border-color .18s}
+.world-market-mini:hover{background:rgba(255,255,255,.16)}
+.world-market-mini.selected{border-color:var(--electric)}
+.world-market-mini strong{font-size:12px;line-height:1.3;overflow-wrap:anywhere}
+.world-market-mini small{font-size:10px;color:var(--on-dark-muted);margin-top:6px}
+.map-loading{padding:28px;color:#6e8476}
+@media(max-width:1100px){.world-bento{grid-template-columns:1fr;grid-template-areas:"map" "right" "markets"}.world-right{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}.world-market-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.world-map-head{padding:17px}.world-map-tools{width:100%}.world-map-tools input{flex:1;width:110px}.world-map-legend{padding:14px 17px;gap:10px}.world-right{grid-template-columns:1fr}.world-market-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.world-dark-card{padding:19px}.world-page .map-canvas{min-height:240px}}
+@media(prefers-reduced-motion:reduce){.world-market-mini{transition:none}.world-page .country{transition:none}}
