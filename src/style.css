@@ -129,3 +129,6 @@ button,input,select,textarea{font-family:"SKODA Next",Arial,sans-serif}
 @media(hover:hover) and (pointer:fine){.market-info-sections > .market-info-card:hover{border-color:#a4d8b8;box-shadow:0 12px 30px rgba(14,58,47,.10);transform:translateY(-3px)}}
 .market-info-sections > .market-info-card:focus-within{border-color:var(--electric);box-shadow:0 0 0 2px rgba(120,250,174,.22)}
 @media(prefers-reduced-motion:reduce){.market-info-sections > .market-info-card{transition:none}.market-info-sections > .market-info-card:hover{transform:none}}
+
+/* Showroom equipment reference catalog */
+.equipment-panel{margin-top:20px}.equipment-panel h2{font-size:20px;margin:0 0 8px}.equipment-panel>.panel-body>.muted{margin:0 0 20px}.equipment-variant{margin-top:17px;border:1px solid #e6ece7;border-radius:12px;overflow:hidden;background:#fbfcfb}.equipment-variant h3{margin:0;padding:14px 16px;background:#edf4ee;color:var(--emerald);font-size:15px}.equipment-table{font-size:13px}.equipment-table th{background:#f6f8f6}.equipment-table td{overflow-wrap:anywhere}.equipment-table th:first-child,.equipment-table td:first-child{width:42%}
