@@ -123,3 +123,9 @@ button,input,select,textarea{font-family:"SKODA Next",Arial,sans-serif}
 
 /* Globe pointer affordance and continuous drag */
 .world-page .map-canvas svg{cursor:grab;user-select:none;-webkit-user-select:none;touch-action:none}.world-page .map-canvas svg.is-dragging,.world-page .map-canvas svg.is-dragging *{cursor:grabbing!important}.world-page .world-marker{cursor:pointer}
+
+/* Subtle hover feedback for the two market overview cards */
+.market-info-sections > .market-info-card{transition:border-color .22s ease,box-shadow .22s ease,transform .22s ease;will-change:transform}
+@media(hover:hover) and (pointer:fine){.market-info-sections > .market-info-card:hover{border-color:#a4d8b8;box-shadow:0 12px 30px rgba(14,58,47,.10);transform:translateY(-3px)}}
+.market-info-sections > .market-info-card:focus-within{border-color:var(--electric);box-shadow:0 0 0 2px rgba(120,250,174,.22)}
+@media(prefers-reduced-motion:reduce){.market-info-sections > .market-info-card{transition:none}.market-info-sections > .market-info-card:hover{transform:none}}
